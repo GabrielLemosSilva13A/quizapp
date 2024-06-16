@@ -9,6 +9,7 @@
  :root {
     --bg-color: #f6faf6;
     --purple: #a729f5;
+    --purple-hover: rgb(167, 41, 245, 0.7);
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --button-bg: #fff;
@@ -153,6 +154,11 @@ main {
     border-radius: 12px;
     box-shadow: var(--shadow);
     color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.alternativas label:hover {
+    background: var(--bg-acessibilidade);
 }
 
 .alternativas label:has(input:checked) {
@@ -218,7 +224,12 @@ main {
 
     font-size: 18px;
     font-weight: 500;
+    transition: background 0.3s;
+}
 
+.alternativas button:hover {
+    background: var(--purple-hover);
+    cursor: pointer;
 }
 
 @media(min-width: 1100px) {
@@ -297,6 +308,7 @@ main {
     .alternativas label {
         font-size: 22px;
         padding: 18px 28px;
+        border-radius: 24px;
     }
 
     .alternativas div {
