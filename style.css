@@ -60,6 +60,7 @@ header {
     width: 16px;
 
 }
+
 .tema button {
     height: 20px;
     width: 32px;
@@ -68,7 +69,9 @@ header {
     border-radius: 999px;
     padding: 4px;
     display: flex;
+    cursor: pointer;
 }
+
 .tema button div {
     background: var(--white);
     width: 12px;
